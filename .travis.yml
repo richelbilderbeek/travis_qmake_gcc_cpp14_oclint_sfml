@@ -19,8 +19,8 @@ install:
   - ./install_oclint.sh
 
 script: 
- - qmake
- - make
- - ./travis_qmake_gcc_cpp14_oclint_sfml
+  - qmake
+  - make
+  - ./travis_qmake_gcc_cpp14_oclint_sfml
   # OCLint
   - ./do_oclint.sh
