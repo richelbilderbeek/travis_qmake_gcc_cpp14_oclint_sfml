@@ -15,8 +15,12 @@ install:
   - sudo apt-get install -qq g++-5  
   # SFML
   - sudo apt-get install libsfml-dev
+  # OCLint
+  - ./install_oclint.sh
 
 script: 
  - qmake
  - make
  - ./travis_qmake_gcc_cpp14_oclint_sfml
+  # OCLint
+  - ./do_oclint.sh
